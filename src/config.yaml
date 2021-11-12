@@ -1,0 +1,24 @@
+prod_api_keys:
+  base_url: "https://cad.onshape.com"
+  #vnaranjo
+  #secret_key: MMdQaDO1MktCqAydOaLTaj1vGE8qvoY66aOR9dpncw8TzQSr
+  #access_key: chIwahH1jM5z5FBfeZC29Ab0
+  #Edgar
+  secret_key: M48GQXcS2zhqaiYyup5o4RuDOwypJnokfel6Sj5VzKfeD7d2
+  access_key: PA2Hjm7CbkWhnJgt5uE7zdt7
+prod_oauth:
+  base_url: "https://cad.onshape.com"
+  # Make sure to include handling authentication errors by using the refreshToken as discussed here
+  # under OAuth => Refreshing the access token: https://dev-portal.onshape.com/help
+  # access_token: <OPTIONAL> YOU OAUTH ACCESS TOKEN
+  client_id: IZ3....
+  client_secret: GZE2.....
+  redirect_uri: http://localhost:9000
+  token_uri: https://oauth.onshape.com/oauth/token
+  authorization_uri: https://oauth.onshape.com/oauth/authorize
+  scope:
+   - OAuth2Read
+   - OAuth2Write
+  #  refresh_token: <OPTIONAL>
+  oauth_authorization_method: localhost_server
+default_stack: prod_api_keys
